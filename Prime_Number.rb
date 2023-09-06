@@ -3,14 +3,18 @@ def is_prime?(n)
 
   # Check for divisibility from 2 up to the square root of the number
   (2..Math.sqrt(n)).each do |divisor|
-    return false if n % divisor == 0
+
+    return false if n % divisor == 0 #
   end
 
-  return true
+  true
 end
 
 # Test cases
-puts is_prime?(2)   # true
-puts is_prime?(17)  # true
-puts is_prime?(4)   # false
-puts is_prime?(1)   # false
+input = gets.chomp.to_i
+puts is_prime?(input)
+
+# Testing
+# (2..Math.sqrt(85)).each do |number|
+# puts number
+# end

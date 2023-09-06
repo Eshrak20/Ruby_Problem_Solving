@@ -1,16 +1,17 @@
 
 def fact(number)
   if number == 0
-    return 1
+    1
   else
     result = number * fact(number-1)
     puts "Intermediate result for #{number}: #{result}"
-    return result
+    result
   end
 end
 
 result = fact(4)
 puts "Final result: #{result}"
+
 
 
 # -------------- Using while loop ----------------
