@@ -4,12 +4,12 @@ def fact(number)
     1
   else
     result = number * fact(number-1)
-    puts "Intermediate result for #{number}: #{result}"
-    result
+    # puts "Intermediate result for #{number}: #{result}"
+
   end
 end
 
-result = fact(4)
+result = fact(6)
 puts "Final result: #{result}"
 
 
